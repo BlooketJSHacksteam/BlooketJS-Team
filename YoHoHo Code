@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Yohoho.io Updating Hack. Original Source From Adam B.
+// @name         Yohoho.io Updating Hack. Original Source From Brian P.
 // @namespace    http://yohoho.io/
 // @version      1.1.4
 // @description  Hack yohoho.io | Choose any island. Press: I | Choose any skin(1-35). Press: P | Give Yourself As Many Coins At Will. Press: O | (NEW) Choose any pet. Press: Z
@@ -34,7 +34,7 @@ function showHacks(){
 
 function hehe(e){
     if(e.keyCode == "79"){
-        var a = prompt("How many coins would you like?");
+        var a = prompt("How many coins would you like to add?");
         if(isNaN(a)){
             window.alert("Please enter a number next time");
         }else{
@@ -48,7 +48,7 @@ function hehe(e){
             window.alert("Please put a number from 1-35 next time.");
         }else if(b != null || b != undefined || b != ""){
             localStorage.setItem("playerSkin", b);
-            window.alert("Please reload to enable the skin");
+            window.alert("Please refresh to enable the skin");
         }
          }else if(e.keyCode == "90"){
         var z = prompt("What pet would you like? 1-9");
@@ -56,7 +56,7 @@ function hehe(e){
             window.alert("Please put a number from 1-9 next time.");
         }else if(z != null || z != undefined || z != ""){
             localStorage.setItem("playerPet", z);
-            window.alert("Please reload to enable the pet");
+            window.alert("Please refresh to enable the pet");
         }
     }else if(e.keyCode == "73"){
         var c = prompt("What island would you like? \n1 - Island 1 \n2 - Island 2 \n3 - Island 3 \n4 - Island 4 \n5 - Island 5 \n6 - Island 6");
